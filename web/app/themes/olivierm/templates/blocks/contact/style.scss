@@ -1,0 +1,69 @@
+@import "../../../src/scss/partials/variables";
+
+/* -------------------------------
+CONTACT COMPONENT
+------------------------------- */
+.cbo-contact{
+    position: relative;
+
+    &:after{
+        content: '';
+        background: $colorgrey url(../../img/texture.jpg) repeat left top;
+        background-size: contain;
+        opacity: .4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .contact-picture{
+        margin-bottom: -2.5rem;
+        position: relative;
+        z-index: 2;
+
+        img{
+            position: relative;
+            max-width: 23rem;
+            margin: 0 auto;
+        }
+    }
+    .contact-box{
+        position: relative;
+        z-index: 1;
+        background: $colororange;
+        padding: 1.25rem;
+        color: $colorwhite;
+
+        .box-title{
+            margin-bottom: 1.25rem;
+        }
+        .contact-chapo{
+            margin-bottom: 1.875rem;
+        }
+    }
+}
+
+/* -------------------------------
+SMALL SCREENS
+------------------------------- */
+@media (min-width:$screen-sm-min) {
+    .cbo-contact{
+        .contact-inner{
+            display: flex;
+            align-items: flex-start;
+        }
+        .contact-picture{
+            width: 18.75rem;
+            margin: -5rem -2.25rem 0 0;
+
+            img{
+                margin: 0;
+            }
+        }
+        .contact-box{
+            flex: 1;
+            padding: 2.5rem;
+        }
+    }
+}

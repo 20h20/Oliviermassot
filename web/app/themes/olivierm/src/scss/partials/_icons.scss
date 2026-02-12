@@ -1,0 +1,31 @@
+// Custom template
+
+@font-face {
+    font-family:"icons";
+    src: url("../iconfont/icons.eot?d3b868eab797f81a64e7a20eebe37cf6");
+    src: url("../iconfont/icons.eot?d3b868eab797f81a64e7a20eebe37cf6#iefix") format("embedded-opentype"),
+		url("../iconfont/icons.woff?d3b868eab797f81a64e7a20eebe37cf6") format("woff"),
+		url("../iconfont/icons.ttf?d3b868eab797f81a64e7a20eebe37cf6") format("truetype"),
+		url("../iconfont/icons.svg?d3b868eab797f81a64e7a20eebe37cf6#icons") format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+    }
+
+.icon {
+    font-family:"icons";
+    display:inline-block;
+    font-style:normal;
+    speak:none;
+    -webkit-font-smoothing:antialiased;
+    font-size:1em;
+    line-height:1em;
+    vertical-align:baseline;
+    }
+
+// Icons
+.icon--check:before { content:"\f101"; }
+.icon--logo-jb:before { content:"\f102"; }
+.icon--success:before { content:"\f103"; }
+.icon--timer:before { content:"\f104"; }
+.icon--warning:before { content:"\f105"; }

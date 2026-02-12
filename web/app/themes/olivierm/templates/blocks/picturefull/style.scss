@@ -1,0 +1,28 @@
+@import "../../../src/scss/partials/variables";
+
+/* -------------------------------
+PICTURE FULL COMPONENT
+------------------------------- */
+.cbo-picturefull{
+    height: calc(100vh - 4rem);
+    height: calc(100dvh - 4rem);
+
+    .picturefull-inner{
+        .picturefull-picture{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+/* -------------------------------
+SMALL SCREENS
+------------------------------- */
+@media (min-width: $screen-sm-min){
+    .cbo-picturefull{
+        height: calc(100vh - 4.5rem);
+    }
+}

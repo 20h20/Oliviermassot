@@ -5,4 +5,4 @@ Disallow: /private/
 Disallow: /?s=*
 Allow: /public/
 
-Sitemap:
+Sitemap:https://www.oliviermassot.com/sitemap_index.xml

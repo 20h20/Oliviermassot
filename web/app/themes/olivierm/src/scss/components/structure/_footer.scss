@@ -1,0 +1,39 @@
+/* -------------------------------
+FOOTER COMPONENT
+------------------------------- */
+footer{
+   color: $colorwhite;
+   background: $colorgreydark;
+
+   .footer-inner{
+      font-size: 0.75rem;
+      line-height: 1.5rem;
+      opacity: .6;
+      text-align: center;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+      margin-bottom: 0;
+      margin-top: 0;
+
+      a{
+         color: $colorwhite;
+      }
+   }
+}
+
+/* -------------------------------
+MEDIUM SCREENS
+------------------------------- */
+@media (min-width: $screen-md-min){
+   footer{
+      .footer-inner{
+         a{
+            transition: all .4s;
+
+            &:hover{
+               color: $colororange;
+            }
+         }
+      }
+   }
+}

@@ -1,6 +1,6 @@
-app.engine.version=8.2
+container.image=stable64
 http.firewall=none
 app.engine=php
-container.image=stable64
 environment=production
-
+app.engine.version=8.2
+phpsettings=max_execution_time=300, upload_max_filesize=100M, post_max_size=100M, memory_limit=256M

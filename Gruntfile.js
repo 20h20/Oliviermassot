@@ -81,7 +81,6 @@ module.exports = function (grunt) {
         src: "<%= path_dist_blocks %>*.css"
       },
 
-      /* 🔥 NOUVEAU : minification des CSS des parts */
       parts: {
         src: "<%= path_dist_parts %>*.css"
       },
