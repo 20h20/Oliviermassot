@@ -16,8 +16,8 @@ use function Env\env;
  * Example: `Config::define('DISALLOW_FILE_MODS', false);`
  */
 
- Config::define('WP_DEBUG', true);
-Config::define('WP_DEBUG_DISPLAY', true);
+ Config::define('WP_DEBUG', false);
+Config::define('WP_DEBUG_DISPLAY', false);
 Config::define('WP_CACHE', false);
 
 Config::define('WPCF7_AUTOP', false);
