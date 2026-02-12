@@ -1,0 +1,171 @@
+/* -------------------------------
+TYPOGRAPHY
+------------------------------- */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+a{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.cbo-title-1, .cbo-title-2, .cbo-title-3, .cbo-title-4, .cbo-title-5, .cbo-title-6,
+h1,h2,h3,h4,h5,h6,blockquote{
+	margin: 0;
+	font-weight: bold;
+}
+
+.cbo-title-1, .cbo-title-1 h1, .cbo-title-1 h2, .cbo-title-1 h3, .cbo-title-1 h4.cbo-title-2 h5, .cbo-title-1 p, .cbo-cms h1{
+	font-size: 2.125rem;
+	line-height: 2.5rem;
+}
+
+.cbo-title-2, .cbo-title-2 h1, .cbo-title-2 h2, .cbo-title-2 h3, .cbo-title-2 h4.cbo-title-2 h5, .cbo-title-2 p, .cbo-cms h2{
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+}
+
+.cbo-title-3, .cbo-title-3 h1, .cbo-title-3 h2, .cbo-title-3 h3, .cbo-title-3 h4.cbo-title-3 h5, .cbo-title-3 p, .cbo-cms h2{
+	font-size: 1.25rem;
+	line-height: 1.625rem;
+}
+
+.cbo-chapo{
+	font-size: 1.125rem;
+	line-height: 1.625rem;
+	max-width: 51.25rem;
+}
+
+.cbo-cms{
+	ul,
+	p{
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	p{
+		margin: 1rem 0;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+	a{
+		&:not(.cbo-button){
+			color: $colororange;
+			transition: all .4s;
+
+			&:hover{
+				opacity: .6;
+			}
+		}
+	}
+	h1,h2,h3,h4,h5,h6{
+		margin: 3.125rem 0 1.875rem 0;
+
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+	blockquote{
+		font-style: italic;
+		border-left: 0.3125rem solid $colorwhite;
+		padding-left: 1.25rem;
+		font-size: 1.25rem;
+		line-height: 1.875rem;
+	}
+	ul{
+		margin: 1.875rem 0;
+
+		&:first-child{
+			margin-top: 0;
+		}
+		li{
+			position: relative;
+			margin-bottom: 0.875rem;
+
+			&:before{
+				font-family:"icons";
+				content: '\f101';
+				color: $colororange;
+				margin-right: 1rem;
+				font-size: 0.875rem;
+			}
+			&:last-child{
+				padding-bottom: 0;
+			}
+		}
+	}
+	ol{
+		padding: 0 0 0 1.25rem;
+
+		li{
+			padding:0 0 0 0.625rem;
+			margin-bottom: 0.875rem;
+			
+			&::marker{
+				color: $colororange;
+			}
+		}
+	}
+	hr{
+		border: 0;
+		border-bottom: 0.0625rem solid rgba($colororange, .2);
+		margin: 3.125rem 0;
+	}
+	img{
+		margin: 3.125rem auto;
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+/* -------------------------------
+MEDIUM SCREENS
+------------------------------- */
+@media (min-width: $screen-md-min){
+	.cbo-cms{
+		h1,h2,h3,h4,h5,h6{
+			margin: 5rem 0 1.875rem 0;
+	
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+	}
+	.cbo-title-1, .cbo-title-1 h1, .cbo-title-1 h2, .cbo-title-1 h3, .cbo-title-1 h4.cbo-title-2 h5, .cbo-title-1 p, .cbo-cms h1{
+		font-size: 3.125rem;
+		line-height: 3.75rem;
+	}
+	.cbo-title-2, .cbo-title-2 h1, .cbo-title-2 h2, .cbo-title-2 h3, .cbo-title-2 h4.cbo-title-2 h5, .cbo-title-2 p, .cbo-cms h2{
+		font-size: 2.5rem;
+		line-height: 3.125rem;
+	}
+	.cbo-chapo{
+		font-size: 1.375rem;
+		line-height: 1.875rem;
+	}
+}

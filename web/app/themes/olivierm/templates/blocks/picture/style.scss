@@ -1,0 +1,17 @@
+@import "../../../src/scss/partials/variables";
+
+/* -------------------------------
+PICTURE COMPONENT
+------------------------------- */
+.cbo-picture{
+    .picture-picture{
+        &.cbo-picture-contain{
+            img{
+                position: relative;
+            }
+        }
+        &.cbo-picture-cover{
+            padding-bottom: 50%;
+        }
+    }
+}

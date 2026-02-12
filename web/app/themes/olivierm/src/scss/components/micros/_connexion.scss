@@ -1,0 +1,39 @@
+/* -------------------------------
+CONNEXION COMPONENT
+------------------------------- */	
+.login{
+	padding: 0;
+	display: flex;
+
+	a,
+	label{
+		color:$colorblack;
+	}
+	h1{
+		a{
+			background: url("../img/logo-olivier-massot.png") no-repeat center;
+			background-size: contain;
+			width: 12.5rem;
+			height: 2rem
+		}
+	}
+	form .input{
+		border:1px solid $colororange;
+	}
+	.button.button-large{
+		background: $colororange;
+		border: 0px;
+		margin-top: 1.875rem;
+		width: 100%;
+	}
+	form .input{
+		border-radius: 0;
+	}
+	.language-switcher{
+		display: none;
+	}
+	.notice-info,
+	.notice-error{
+		color: $colorblack;
+	}
+}
