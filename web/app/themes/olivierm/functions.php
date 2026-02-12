@@ -115,5 +115,12 @@
 	add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
 
 
-	
+	/* ************************* */
+	/* TRANSLATE KEYS */
+	/* ************************* */
+	add_action('init', function() {
+		pll_register_string( '404', "Erreur 404");
+		pll_register_string( '404', "La page que vous rechechez n\'existe pas.<br />Vous pouvez toujours revenir sur vos pas.");
+		pll_register_string( '404', "Revenir à l\'accueil");
+	});
 ?>
