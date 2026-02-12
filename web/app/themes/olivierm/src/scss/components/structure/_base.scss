@@ -4,7 +4,7 @@ html {
 }
 body {
 	&:not(.wp-admin){
-		background: green;
+		background: $colorgrey;
 		color: $colorblack;
 		font-size: 1.125rem;
 		line-height: 1.625rem;
